@@ -61,7 +61,7 @@ local Grid = Instance.new("UIGridLayout",arrayFrame)
 Grid.CellPadding = UDim2.new(0, 0, 0.0001, 0)
 Grid.SortOrder = Enum.SortOrder.LayoutOrder
 Grid.CellSize = UDim2.new(1, 0, 0.0275, 0)
-Grid.HorizontalAlignment = "Left"
+Grid.HorizontalAlignment = "Right"
 
 task.spawn(function()
     while task.wait(1) do
@@ -81,12 +81,12 @@ Arraylist = {
         Text.Name = Name
         Text.BackgroundTransparency = 1
         Text.Size = UDim2.new(0,0,1,0)
-        Text.Font = Enum.Font.FredokaOne
+        Text.Font = Enum.Font.Fondamento
         local TextScale = Text.AbsoluteSize.Y * 0.7
         Text.TextSize = TextScale
         Text.Text = newName.." "
         local size = game:GetService("TextService"):GetTextSize(newName, TextScale, Enum.Font.Gotham, Vector2.new(1000000, 1000000))
-        Text.TextXAlignment = "Right"
+        Text.TextXAlignment = "Left"
         Text.LayoutOrder = -size.X
 	    Text.TextColor3 = Color3.new(59/255, 170/255, 222/255)
 	    Text.TextStrokeTransparency = 0
