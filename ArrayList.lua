@@ -88,7 +88,7 @@ Arraylist = {
         local size = game:GetService("TextService"):GetTextSize(newName, TextScale, Enum.Font.Gotham, Vector2.new(1000000, 1000000))
         Text.TextXAlignment = "Right"
         Text.LayoutOrder = -size.X
-	    Text.TextColor3 = Color3.new(151/255, 59/255, 243/255)
+	    Text.TextColor3 = Color3.new(249/255, 129/255, 8/255)
 	    Text.TextStrokeTransparency = 0
         task.spawn(function()
             repeat
