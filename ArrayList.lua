@@ -82,13 +82,13 @@ Arraylist = {
         Text.BackgroundTransparency = 1
         Text.Size = UDim2.new(0,0,1,0)
         Text.Font = Enum.Font.Gotham
-        local TextScale = Text.AbsoluteSize.Y * 0.7
+        local TextScale = Text.AbsoluteSize.Y * 0.8
         Text.TextSize = TextScale
         Text.Text = newName.." "
         local size = game:GetService("TextService"):GetTextSize(newName, TextScale, Enum.Font.Gotham, Vector2.new(1000000, 1000000))
         Text.TextXAlignment = "Right"
         Text.LayoutOrder = -size.X
-	    Text.TextColor3 = Color3.new(249/255, 129/255, 8/255)
+	    Text.TextColor3 = Color3.new(17/255, 234/255, 126/255)
 	    Text.TextStrokeTransparency = 0
         task.spawn(function()
             repeat
